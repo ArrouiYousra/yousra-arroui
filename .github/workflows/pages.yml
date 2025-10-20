@@ -29,7 +29,7 @@ jobs:
 
       - name: Install dependencies
         run: npm ci || npm install
-        working-directory: my-app 
+        working-directory: my-app
 
       - name: Build
         run: npm run build
