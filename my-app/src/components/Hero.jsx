@@ -10,7 +10,7 @@ const Hero = () => {
             <div className="image-container">
               <img 
                 src={process.env.PUBLIC_URL + '/yousra-photo.jpg'} 
-                alt="Yousra Arroui - Photo professionnelle" 
+                alt="Yousra Arroui" 
                 className="professional-photo"
               />
             </div>
