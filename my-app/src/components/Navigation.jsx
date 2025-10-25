@@ -1,12 +1,12 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useCallback } from 'react';
 import SidebarNav from './SidebarNav';
 import SidebarFooter from './SidebarFooter';
 import './Sidebar.css';
 
 const Navigation = ({ isSidebarOpen, onToggleSidebar }) => {
-  const closeSidebar = () => {
+  const closeSidebar = useCallback(() => {
     onToggleSidebar();
-  };
+  }, [onToggleSidebar]);
 
 
   useEffect(() => {

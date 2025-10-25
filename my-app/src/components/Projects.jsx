@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import './Projects.css';
 
 const Projects = () => {
@@ -37,7 +37,7 @@ const Projects = () => {
     return () => {
       document.removeEventListener('keydown', handleKeyDown);
     };
-  }, []);
+  }, [nextProject, prevProject]);
 
   const projects = [
     {
@@ -103,13 +103,13 @@ const Projects = () => {
     }
   ];
 
-  const nextProject = () => {
+  const nextProject = useCallback(() => {
     setCurrentProject((prev) => (prev + 1) % projects.length);
-  };
+  }, []);
 
-  const prevProject = () => {
+  const prevProject = useCallback(() => {
     setCurrentProject((prev) => (prev - 1 + projects.length) % projects.length);
-  };
+  }, []);
 
   const goToProject = (index) => {
     setCurrentProject(index);
