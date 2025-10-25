@@ -23,22 +23,6 @@ const Projects = () => {
     return () => observer.disconnect();
   }, []);
 
-  useEffect(() => {
-    const handleKeyDown = (event) => {
-      if (event.key === 'ArrowLeft') {
-        prevProject();
-      } else if (event.key === 'ArrowRight') {
-        nextProject();
-      }
-    };
-
-    document.addEventListener('keydown', handleKeyDown);
-
-    return () => {
-      document.removeEventListener('keydown', handleKeyDown);
-    };
-  }, [nextProject, prevProject]);
-
   const projects = [
     {
       id: 'portfolio',
@@ -105,15 +89,31 @@ const Projects = () => {
 
   const nextProject = useCallback(() => {
     setCurrentProject((prev) => (prev + 1) % projects.length);
-  }, []);
+  }, [projects.length]);
 
   const prevProject = useCallback(() => {
     setCurrentProject((prev) => (prev - 1 + projects.length) % projects.length);
-  }, []);
+  }, [projects.length]);
 
   const goToProject = (index) => {
     setCurrentProject(index);
   };
+
+  useEffect(() => {
+    const handleKeyDown = (event) => {
+      if (event.key === 'ArrowLeft') {
+        prevProject();
+      } else if (event.key === 'ArrowRight') {
+        nextProject();
+      }
+    };
+
+    document.addEventListener('keydown', handleKeyDown);
+
+    return () => {
+      document.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [nextProject, prevProject]);
 
   const currentProjectData = projects[currentProject];
 
