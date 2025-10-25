@@ -1,0 +1,271 @@
+.experience {
+  min-height: 100vh;
+  background: #000000;
+  color: #f0f6fc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8rem 0 8rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.experience-container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.experience-header {
+  text-align: center;
+  margin-bottom: 4rem;
+  position: relative;
+}
+
+.experience-title {
+  font-family: 1px "OpenAI Sans", sans-serif;
+  font-feature-settings: "liga" on, "calt" on;
+  -webkit-font-smoothing: antialiased;
+  font-size: 4rem;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #FFFFFF;
+  margin: 0 0 1rem 0;
+  position: relative;
+}
+
+.experience-content {
+  width: 100%;
+  max-width: 900px;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease;
+}
+
+.experience-content.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.experience-item {
+  margin-bottom: 8rem;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease;
+  transition-delay: var(--delay, 0s);
+}
+
+.experience-item.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.experience-card {
+  width: 100%;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.experience-header-card {
+  margin-bottom: 1.5rem;
+}
+
+.experience-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.experience-job-title {
+  font-family: 1px "OpenAI Sans", sans-serif;
+  font-feature-settings: "liga" on, "calt" on;
+  -webkit-font-smoothing: antialiased;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #FFFFFF;
+  margin: 0;
+  line-height: 1.3;
+}
+
+.experience-company {
+  font-family: 1px "OpenAI Sans", sans-serif;
+  font-feature-settings: "liga" on, "calt" on;
+  -webkit-font-smoothing: antialiased;
+  font-size: 1.3rem;
+  color: #8b949e;
+  margin: 0;
+  font-weight: 500;
+}
+
+.experience-details {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.experience-period,
+.experience-location {
+  font-family: 1px "OpenAI Sans", sans-serif;
+  font-feature-settings: "liga" on, "calt" on;
+  -webkit-font-smoothing: antialiased;
+  font-size: 0.9rem;
+  color: #8b949e;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  border: 1px solid #30363d;
+}
+
+.experience-type {
+  display: inline-block;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-top: 0.5rem;
+  width: fit-content;
+}
+
+.experience-type.stage {
+  background: rgba(34, 197, 94, 0.2);
+  color: #22c55e;
+  border: 1px solid #22c55e;
+}
+
+.experience-type.projet-académique {
+  background: rgba(59, 130, 246, 0.2);
+  color: #3b82f6;
+  border: 1px solid #3b82f6;
+}
+
+.experience-type.freelance {
+  background: rgba(245, 158, 11, 0.2);
+  color: #f59e0b;
+  border: 1px solid #f59e0b;
+}
+
+.experience-type.cdi {
+  background: rgba(255, 255, 255, 0.1);
+  color: #f0f6fc;
+  border: 1px solid #30363d;
+}
+
+.experience-type.cdd {
+  background: rgba(255, 255, 255, 0.1);
+  color: #f0f6fc;
+  border: 1px solid #30363d;
+}
+
+.experience-content-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.experience-description {
+  font-family: 1px "OpenAI Sans", sans-serif;
+  font-feature-settings: "liga" on, "calt" on;
+  -webkit-font-smoothing: antialiased;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #f0f6fc;
+  margin: 0;
+}
+
+.experience-technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tech-tag {
+  font-family: 1px "OpenAI Sans", sans-serif;
+  font-feature-settings: "liga" on, "calt" on;
+  -webkit-font-smoothing: antialiased;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid #30363d;
+  border-radius: 20px;
+  padding: 0.4rem 0.8rem;
+  font-size: 0.8rem;
+  color: #f0f6fc;
+  transition: all 0.3s ease;
+}
+
+.tech-tag:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: #f0f6fc;
+  transform: translateY(-2px);
+}
+
+.experience-company a {
+  color: #f0f6fc;
+  text-decoration: underline;
+  text-decoration-color: #f0f6fc;
+  text-underline-offset: 3px;
+  transition: all 0.3s ease;
+}
+
+.experience-company a:hover {
+  color: #f0f6fc;
+  text-decoration: underline;
+  text-decoration-color: #f0f6fc;
+  text-underline-offset: 3px;
+}
+
+.experience-company a:focus {
+  color: #f0f6fc;
+  text-decoration: underline;
+  text-decoration-color: #f0f6fc;
+  text-underline-offset: 3px;
+  outline: none;
+}
+
+@media (max-width: 768px) {
+  .experience {
+    padding: 6rem 0 6rem 0;
+  }
+
+  .experience-title {
+    font-size: 2.5rem;
+  }
+
+  .experience-item {
+    margin-bottom: 3rem;
+  }
+
+  .experience-details {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .experience {
+    padding: 4rem 0;
+  }
+
+  .experience-title {
+    font-size: 2rem;
+  }
+
+
+  .experience-job-title {
+    font-size: 1.3rem;
+  }
+
+  .experience-technologies {
+    gap: 0.3rem;
+  }
+
+  .tech-tag {
+    font-size: 0.7rem;
+    padding: 0.3rem 0.6rem;
+  }
+}

@@ -6,34 +6,18 @@ const Hero = () => {
     <section id="home" className="hero">
       <div className="hero-container">
         <div className="hero-content">
-          <div className="hero-image">
-            <div className="image-container">
-              <img 
-                src={process.env.PUBLIC_URL + '/yousra-photo.jpg'} 
-                alt="Yousra Arroui" 
-                className="professional-photo"
-              />
-            </div>
-          </div>
-          
-          <div className="hero-text">
-            <h1 className="hero-title">
-              <span className="hero-name">Call me Yousra.</span>
-            </h1>
-            
-            <p className="hero-catchphrase">
-              Welcome to my Portfolio
-            </p>
-            
-            <div className="hero-description">
-              <p>Computer science student</p>
-              <p>Software Developer for fun</p>
-              <p>Always leveling up my skills</p>
-            </div>
-            
+          <div className="hero-video-container">
+            <img 
+              src={process.env.PUBLIC_URL + '/23d25f92483d3ece840f54c65a524b0b.gif'} 
+              className="hero-video"
+              alt="Hero animation"
+              onError={(e) => {
+                console.error('Erreur de chargement de l\'image:', e);
+                e.target.style.display = 'none';
+              }}
+            />
           </div>
         </div>
-        
       </div>
     </section>
   );

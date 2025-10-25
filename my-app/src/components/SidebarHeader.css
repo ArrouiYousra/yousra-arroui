@@ -1,0 +1,60 @@
+.sidebar-header {
+  padding: 20px;
+  border-bottom: 1px solid #30363d;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.sidebar-header-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.hamburger-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+}
+
+.hamburger-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.sidebar-icon {
+  color: #f0f6fc;
+  transition: all 0.3s ease;
+}
+
+.sidebar-icon:hover {
+  color: #58a6ff;
+  transform: scale(1.1);
+}
+
+.sidebar-icon-open {
+  color: #f0f6fc;
+  transform: rotate(90deg);
+}
+
+.sidebar-header-name {
+  font-family: 1px "OpenAI Sans", sans-serif;
+  font-feature-settings: "liga" on, "calt" on;
+  -webkit-font-smoothing: antialiased;
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+
+
+@media (max-width: 480px) {
+  .sidebar-header {
+    padding: 20px 16px;
+  }
+}

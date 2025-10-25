@@ -1,0 +1,33 @@
+.sidebar-footer {
+  padding: 20px;
+}
+
+.sidebar-social {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.sidebar-social a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  color: #f0f6fc;
+  transition: all 0.2s ease;
+  border: 1px solid #30363d;
+}
+
+.sidebar-social a:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #f0f6fc;
+  border-color: #30363d;
+  transform: translateY(-2px);
+}
+
+.sidebar-social a:focus {
+  outline: none;
+}
