@@ -6,6 +6,17 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-container">
         <div className="footer-content">
+          <div className="footer-linktree">
+            <a href="https://lnk.bio/yousraarroui" target="_blank" rel="noopener noreferrer" className="linktree-link">
+              <img 
+                src={process.env.PUBLIC_URL + '/frame.png'} 
+                alt="QR Code Linktree" 
+                className="linktree-qr"
+              />
+              <span className="linktree-text">Tous mes liens</span>
+            </a>
+          </div>
+          
           <div className="footer-social">
             <a href="https://github.com/ArrouiYousra" target="_blank" rel="noopener noreferrer" className="social-link" title="GitHub">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">

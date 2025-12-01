@@ -25,6 +25,27 @@ const Projects = () => {
 
   const projects = [
     {
+      id: '2dgame',
+      title: 'Jeu 2D',
+      description: 'Jeu vidéo 2D développé en Java avec LibGDX. Système de combat, gestion des ennemis, inventaire et mécaniques de gameplay avancées.',
+      image: '/yousra-arroui/2d-game.png',
+      technologies: ['Java', 'LibGDX', 'Gradle', 'Game Development'],
+      status: 'Terminé',
+      github: 'https://github.com/ArrouiYousra/2D-Game',
+      featured: true
+    },
+    {
+      id: 'cookus',
+      title: 'Cook Us - Plateforme de Cuisine',
+      description: 'Plateforme connectant des cuisiniers à des particuliers pour préparer des repas à domicile avec les ingrédients disponibles dans leurs placards et frigos.',
+      image: '/yousra-arroui/cook-us.png',
+      technologies: ['TypeScript', 'PostgreSQL', 'API REST', 'Vercel'],
+      status: 'Terminé',
+      github: 'https://github.com/ArrouiYousra/GYF-COOK-US-',
+      demo: 'https://cook-us.vercel.app/',
+      featured: true
+    },
+    {
       id: 'portfolio',
       title: 'Portfolio Personnel',
       description: 'Site web portfolio développé avec React, présentant mes compétences, projets et parcours académique. Design moderne avec animations et interface responsive.',
