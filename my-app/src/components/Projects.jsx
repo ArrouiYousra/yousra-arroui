@@ -26,9 +26,9 @@ const Projects = () => {
   const projects = [
     {
       id: '2dgame',
-      title: 'Jeu 2D',
-      description: 'Jeu vidéo 2D développé en Java avec LibGDX. Système de combat, gestion des ennemis, inventaire et mécaniques de gameplay avancées.',
-      image: '/yousra-arroui/2d-game.png',
+      title: 'AbyssBorn',
+      description: 'Jeu vidéo 2D développé en Java avec LibGDX.',
+      image: '/AbyssBorn.png',
       technologies: ['Java', 'LibGDX', 'Gradle', 'Game Development'],
       status: 'Terminé',
       github: 'https://github.com/ArrouiYousra/2D-Game',
@@ -36,10 +36,10 @@ const Projects = () => {
     },
     {
       id: 'cookus',
-      title: 'Cook Us - Plateforme de Cuisine',
-      description: 'Plateforme connectant des cuisiniers à des particuliers pour préparer des repas à domicile avec les ingrédients disponibles dans leurs placards et frigos.',
-      image: '/yousra-arroui/cook-us.png',
-      technologies: ['TypeScript', 'PostgreSQL', 'API REST', 'Vercel'],
+      title: 'Cook Us',
+      description: 'Plateforme connectant des cuisiniers à des particuliers.',
+      image: '/cooks.png',
+      technologies: ['TypeScript', 'PostgreSQL', 'API REST', 'Node.js', 'Express', 'Vercel'],
       status: 'Terminé',
       github: 'https://github.com/ArrouiYousra/GYF-COOK-US-',
       demo: 'https://cook-us.vercel.app/',
@@ -47,17 +47,17 @@ const Projects = () => {
     },
     {
       id: 'portfolio',
-      title: 'Portfolio Personnel',
+      title: 'My Portfolio',
       description: 'Site web portfolio développé avec React, présentant mes compétences, projets et parcours académique. Design moderne avec animations et interface responsive.',
       image: '/yousra-arroui/23d25f92483d3ece840f54c65a524b0b.gif',
-      technologies: ['React', 'CSS3', 'JavaScript', 'HTML5'],
+      technologies: ['React', 'HTML5/CSS3', 'JavaScript', 'GitHub Actions'],
       status: 'Terminé',
       github: 'https://arrouiyousra.github.io/yousra-arroui',
       featured: true
     },
     {
       id: 'linkeup',
-      title: 'LinkUp - Plateforme de Recrutement',
+      title: 'LinkUP',
       description: 'Plateforme de recrutement connectant talents et entreprises. Interface intuitive pour la recherche d\'emploi et la gestion des candidatures.',
       image: '/yousra-arroui/reallogo.png',
       technologies: ['Next.js', 'TypeScript', 'React', 'Tailwind', 'Node.js', 'Express', 'Supabase', 'PostgreSQL', 'Looping'],
@@ -66,18 +66,8 @@ const Projects = () => {
       featured: true
     },
     {
-      id: 'digitalresume',
-      title: 'Digital Resume',
-      description: 'Application web pour créer des CV numériques interactifs. Fonctionnalités de personnalisation et export en PDF.',
-      image: '/yousra-arroui/digi.png',
-      technologies: ['HTML5', 'CSS3'],
-      status: 'Terminé',
-      github: 'https://github.com/EpitechMscProPromo2028/T-WEB-500-digitalResume-TLS_yousra-arroui',
-      featured: false
-    },
-    {
       id: 'ian',
-      title: 'IAn - Vulgarisation IA Générative',
+      title: 'IAn',
       description: 'Guide complet des outils d\'IA générative avec contenu théorique et pratique. Explorez les meilleurs générateurs de texte, images, vidéos et sons par IA avec des exemples concrets.',
       image: '/yousra-arroui/ian.png',
       technologies: ['Sphinx', 'GitHub Pages', 'GitHub Actions', 'GitHub Projects', 'HTML', 'CSS', 'JavaScript', 'Markdown', 'MyST'],
@@ -88,7 +78,7 @@ const Projects = () => {
     },
     {
       id: 'vote',
-      title: 'Système de Scrutin',
+      title: 'Vote System',
       description: 'Système de vote avancé implémentant plusieurs méthodes (Condorcet, Schulze, Majoritaire, Uninominal). Développé en C avec authentification SHA256 et gestion des données CSV.',
       image: '/yousra-arroui/4 copia.png.webp',
       technologies: ['C', 'Makefile', 'GitHub', 'Algorithmes', 'Structures de Données', 'SHA256'],
@@ -98,7 +88,7 @@ const Projects = () => {
     },
     {
       id: 'champions',
-      title: 'Champion\'s League Predictor',
+      title: 'Champions League Predictor',
       description: 'Analyse approfondie des données de la Ligue des Champions utilisant la régression linéaire et Random Forest pour prédire les résultats. Application du clustering K-Means pour regrouper les équipes par performance. Évaluation avec précision, rappel, F1-score et AUC-ROC. Visualisation des données avec Pandas et Matplotlib.',
       image: '/yousra-arroui/myCANAL_Cover_web_2760x720___2025_09_26T120242.791.webp',
       technologies: ['Jupyter Notebook', 'Python', 'Machine Learning', 'Data Analysis', 'CSV', 'Benchmark', 'K-Means', 'Logistic Regression', 'Random Forest', 'Pandas', 'Matplotlib'],
