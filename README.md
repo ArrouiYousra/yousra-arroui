@@ -90,10 +90,6 @@ Le portfolio est déployé sur GitHub Pages :
 - **GitHub** : [@Yousraarroui](https://github.com/Yousraarroui)
 - **LinkedIn** : [Yousra Arroui](https://www.linkedin.com/in/yousra-arroui-6a2a2a2a2a/)
 
-## Licence
-
-Ce projet est sous licence MIT. Voir le fichier `LICENSE` pour plus de détails.
-
 ---
 
 **Développé par Yousra Arroui**
