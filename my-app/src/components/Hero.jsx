@@ -6,17 +6,7 @@ const Hero = () => {
     <section id="home" className="hero">
       <div className="hero-container">
         <div className="hero-content">
-          <div className="hero-video-container">
-            <img 
-              src={process.env.PUBLIC_URL + '/23d25f92483d3ece840f54c65a524b0b.gif'} 
-              className="hero-video"
-              alt="Hero animation"
-              onError={(e) => {
-                console.error('Erreur de chargement de l\'image:', e);
-                e.target.style.display = 'none';
-              }}
-            />
-          </div>
+          <p className="hero-text">Passionné d'informatique, recherche alternance pour contribuer à vos projets innovants</p>
         </div>
       </div>
     </section>
