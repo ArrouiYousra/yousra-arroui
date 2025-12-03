@@ -5,10 +5,11 @@ const Certifications = () => {
   const certifications = [
     {
       id: 'hacktogone',
-      title: 'Hacktogone',
+      title: 'Certification - Hackathon IA 2025',
       type: 'Hackathon',
-      description: 'Certification obtenue lors de la participation au hackathon Hacktogone.',
-      date: '2024'
+      description: 'Certification obtenue lors de la participation au Hacktogone.',
+      date: '2024',
+      image: '/assets/certifications/hacktogone.pdf'
     }
   ];
 
@@ -17,12 +18,30 @@ const Certifications = () => {
       <div className="certifications-container">
         <div className="certifications-header">
           <h2 className="certifications-title">Certifications</h2>
-          <div className="certifications-icon">🏆</div>
         </div>
 
         <div className="certifications-content">
           {certifications.map((cert) => (
             <div key={cert.id} className="certification-card">
+              {cert.image && (
+                <div className="certification-preview">
+                  <iframe
+                    src={process.env.PUBLIC_URL + cert.image}
+                    width="100%"
+                    height="500px"
+                    title={`Certification ${cert.title}`}
+                    className="certification-iframe"
+                  />
+                  <a 
+                    href={process.env.PUBLIC_URL + cert.image} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="certification-download"
+                  >
+                    Voir en plein écran
+                  </a>
+                </div>
+              )}
               <div className="certification-header-card">
                 <h3 className="certification-title">{cert.title}</h3>
                 <span className="certification-type">{cert.type}</span>

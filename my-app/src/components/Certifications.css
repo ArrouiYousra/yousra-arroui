@@ -108,6 +108,38 @@
   color: #6366f1;
   font-weight: 500;
   font-size: 0.9rem;
+  margin-bottom: 20px;
+}
+
+.certification-preview {
+  margin-bottom: 25px;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #333;
+}
+
+.certification-iframe {
+  width: 100%;
+  height: 500px;
+  border: none;
+  background: #ffffff;
+}
+
+.certification-download {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.certification-download:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(99, 102, 241, 0.4);
 }
 
 @media (max-width: 768px) {
@@ -126,6 +158,10 @@
 
   .certification-card {
     padding: 20px;
+  }
+
+  .certification-iframe {
+    height: 400px;
   }
 }
 
