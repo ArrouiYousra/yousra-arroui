@@ -32,14 +32,6 @@ const Certifications = () => {
                     title={`Certification ${cert.title}`}
                     className="certification-iframe"
                   />
-                  <a 
-                    href={process.env.PUBLIC_URL + cert.image} 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="certification-download"
-                  >
-                    Voir en plein écran
-                  </a>
                 </div>
               )}
               <div className="certification-header-card">
