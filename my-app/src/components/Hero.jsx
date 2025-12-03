@@ -13,7 +13,7 @@ const Hero = () => {
               className="hero-image"
             />
           </div>
-          <p className="hero-text">Passionné d'informatique, recherche alternance pour contribuer à vos projets innovants</p>
+          <p className="hero-text">Bienvenue dans mon portfolio</p>
         </div>
       </div>
     </section>
