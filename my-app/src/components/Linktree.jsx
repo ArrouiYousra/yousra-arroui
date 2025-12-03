@@ -6,7 +6,7 @@ const Linktree = () => {
     <section id="linktree" className="linktree-section">
       <div className="linktree-container">
         <div className="linktree-header">
-          <h2 className="linktree-title">Retrouvez-moi sur tous mes réseaux</h2>
+          <h2 className="linktree-title">Liens utiles</h2>
         </div>
         
         <div className="linktree-content">
