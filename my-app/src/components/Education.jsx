@@ -7,7 +7,6 @@ const Education = () => {
       <div className="education-container">
         <div className="education-header">
           <h2 className="education-title">Éducation</h2>
-          <div className="education-icon">🎓</div>
         </div>
 
         <div className="education-content">

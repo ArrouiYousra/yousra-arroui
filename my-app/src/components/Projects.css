@@ -135,6 +135,11 @@
   object-fit: contain;
 }
 
+.project-image[alt="AbyssBorn"] {
+  object-fit: contain;
+  background: #000000;
+}
+
 .project-card:hover .project-image {
   transform: scale(1.05);
 }

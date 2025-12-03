@@ -7,7 +7,6 @@ const About = () => {
       <div className="about-container">
         <div className="about-header">
           <h2 className="about-title">À propos</h2>
-          <div className="about-icon">💻</div>
         </div>
 
         <div className="about-photo">
