@@ -108,10 +108,10 @@ const Projects = () => {
     },
     {
       id: 'docker',
-      title: 'Projet Docker',
-      description: 'À compléter - Description du projet Docker.',
+      title: 'Popeye - Docker',
+      description: 'Projet d\'apprentissage de Docker et Docker Compose visant à maîtriser le déploiement d\'une architecture multi-services. Création de Dockerfiles multi-stage pour Python, Node.js et Java, configuration d\'un réseau de 5 services via Docker Compose, mise en place de réseaux et volumes, et implémentation de la communication inter-services. Respect des bonnes pratiques DevOps (versions spécifiques, variables d\'environnement, optimisations).',
       image: process.env.PUBLIC_URL + '/assets/projects/placeholder.png',
-      technologies: ['Docker', 'À compléter'],
+      technologies: ['Docker', 'Docker Compose', 'Python', 'Node.js', 'Java', 'DevOps', 'Multi-stage Build', 'Networking', 'Volumes'],
       status: 'En cours',
       github: '',
       featured: true

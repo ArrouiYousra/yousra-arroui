@@ -8,8 +8,3 @@
 #root {
   min-height: 100vh;
 }
-
-/* Ensure proper spacing for fixed navigation */
-.App > *:first-child {
-  margin-top: 0;
-}
