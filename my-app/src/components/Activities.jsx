@@ -24,36 +24,40 @@ const Activities = () => {
 
   const activities = [
     {
-      name: 'Dermatologie',
-      icon: '🔬'
-    },
-    {
       name: 'Science de la vie',
-      icon: '🧬'
+      image: 'https://api.iconify.design/mdi/test-tube.svg?color=%23ffffff'
     },
     {
-      name: 'Débat',
-      icon: '💬'
+      name: 'Dermatologie',
+      image: 'https://api.iconify.design/mdi/test-tube.svg?color=%23ffffff'
     },
     {
       name: 'Yoga',
-      icon: '🧘'
-    },
-    {
-      name: 'Fitness',
-      icon: '💪'
+      image: 'https://api.iconify.design/mdi/yoga.svg?color=%23ffffff'
     },
     {
       name: 'Pilates',
-      icon: '🤸'
+      image: 'https://api.iconify.design/mdi/yoga.svg?color=%23ffffff'
     },
     {
-      name: 'Cuisine',
-      icon: '👨‍🍳'
+      name: 'Fitness',
+      image: 'https://api.iconify.design/mdi/dumbbell.svg?color=%23ffffff'
+    },
+    {
+      name: 'Débat',
+      image: 'https://api.iconify.design/mdi/forum-outline.svg?color=%23ffffff'
     },
     {
       name: 'Cours en ligne',
-      icon: '📚'
+      image: 'https://api.iconify.design/mdi/book-open-variant.svg?color=%23ffffff'
+    },
+    {
+      name: 'Cuisine',
+      image: 'https://api.iconify.design/mdi/chef-hat.svg?color=%23ffffff'
+    },
+    {
+      name: 'Jeux vidéos',
+      image: 'https://api.iconify.design/mdi/gamepad-variant.svg?color=%23ffffff'
     }
   ];
 
@@ -71,6 +75,13 @@ const Activities = () => {
               className={`activity-item ${isVisible ? 'visible' : ''}`}
               style={{ '--delay': `${index * 0.1}s` }}
             >
+              {activity.image && (
+                <img 
+                  src={activity.image} 
+                  alt={activity.name}
+                  className="activity-image"
+                />
+              )}
               <span className="activity-name">{activity.name}</span>
             </div>
           ))}
@@ -81,4 +92,3 @@ const Activities = () => {
 };
 
 export default Activities;
-

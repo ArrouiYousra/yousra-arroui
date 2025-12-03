@@ -30,7 +30,6 @@ const Education = () => {
                 <h4 className="timeline-school">EPITECH Toulouse</h4>
                 <p className="timeline-description">
                   Formation d'excellence intensive de 4 mois suivie d'un rythme alterné en entreprise. <br />
-                  Acquisition des bases en administration systèmes, programmation orientée objet et développement web.
                 </p>
                 <div className="timeline-status current">En cours</div>
               </div>
@@ -100,9 +99,7 @@ const Education = () => {
                 <h3 className="timeline-title">Bac Général série S spécialité Mathématiques</h3>
                 <h4 className="timeline-school">Lycée International Alexandre Dumas, Alger</h4>
                 <p className="timeline-description">
-                  Le bac S a disparu en 2019-2020. La réforme du lycée initiée en 2018 a confirmé l'abandon des séries S, ES et L du Bac général. 
-                  C'est l'équivalent du Bac Général d'aujourd'hui pour les élèves qui souhaitent faire de longues études comme l'informatique, 
-                  l'ingénierie, la biologie, etc.
+                  Baccalauréat général série S spécialité Mathématiques.
                 </p>
                 <div className="timeline-status completed">Obtenu</div>
               </div>

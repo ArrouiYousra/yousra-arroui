@@ -13,7 +13,6 @@ const Hero = () => {
               className="hero-image"
             />
           </div>
-          <p className="hero-text">Bienvenue dans mon portfolio</p>
         </div>
       </div>
     </section>

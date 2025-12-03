@@ -81,20 +81,20 @@
   transition: all 0.3s ease;
   backdrop-filter: blur(10px);
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 150px;
+  transform: translateY(0);
   z-index: 10;
 }
 
 .nav-arrow:hover {
   background: rgba(255, 255, 255, 0.2);
   border-color: #f0f6fc;
-  transform: translateY(-50%) scale(1.1);
+  transform: scale(1.1);
   box-shadow: 0 4px 20px rgba(255, 255, 255, 0.1);
 }
 
 .nav-arrow:active {
-  transform: translateY(-50%) scale(0.95);
+  transform: scale(0.95);
 }
 
 .nav-arrow-left {
@@ -110,6 +110,7 @@
   width: 100%;
   transition: all 0.5s ease;
   position: relative;
+  margin: 0 auto;
 }
 
 
@@ -125,7 +126,7 @@
 .project-image {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   transition: transform 0.5s ease;
 }
 
@@ -159,7 +160,7 @@
 }
 
 .project-card:hover .project-image {
-  transform: scale(1.05);
+  transform: scale(1.02);
 }
 
 .project-overlay {

@@ -20,18 +20,16 @@ const About = () => {
         <div className="about-content">
           <div className="about-text">
             <p className="about-paragraph">
-              Je suis <strong>Yousra Arroui</strong>, 24 ans, étudiante en informatique basée à Toulouse. 
-              Passionnée par la programmation depuis 5 ans, j'ai commencé en autodidacte avec Python et C.
+              <strong>Yousra Arroui</strong>, 24 ans, développeuse transformant des lignes de code en solutions innovantes. 
             </p>
 
             <p className="about-paragraph">
-              Après une <strong>licence d'Informatique</strong> à l'Université Paul Sabatier, je poursuis actuellement 
-              mon cursus à <strong>EPITECH Toulouse</strong> en Pré-Master of Science, avec pour objectif d'obtenir mon diplôme en 2028.
+              Diplômée d'une <strong>licence d'Informatique</strong> à l'Université Paul Sabatier, je perfectionne actuellement mes compétences 
+              à <strong>EPITECH Toulouse</strong> en Pré-Master of Science. Mon objectif ? Obtenir mon diplôme en 2028 et acquérir de l'expérience en entreprise.
             </p>
 
             <p className="about-paragraph">
-              Je recherche une <strong>alternance</strong> pour allier formation théorique et expérience pratique en entreprise. 
-              Mon adaptabilité et ma rigueur me permettent de m'intégrer rapidement dans vos équipes et de contribuer efficacement à vos projets.
+              Je recherche une <strong>alternance</strong> où je pourrai être formée et vous aider à réaliser vos projets et à augmenter votre chiffre d'affaires. 
             </p>
           </div>
         </div>

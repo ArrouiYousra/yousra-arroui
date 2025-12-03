@@ -38,9 +38,31 @@ const Skills = () => {
       ]
     },
     {
+      id: 'languages',
+      title: 'Langages de Programmation',
+      skills: [
+        {
+          name: 'Python',
+          logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg'
+        },
+        {
+          name: 'C',
+          logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg'
+        },
+        {
+          name: 'Java',
+          logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg'
+        }
+      ]
+    },
+    {
       id: 'web',
       title: 'Développement Web',
       skills: [
+        {
+          name: 'JavaScript',
+          logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg'
+        },
         {
           name: 'React',
           logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg'
@@ -100,6 +122,10 @@ const Skills = () => {
         {
           name: 'Scikit-learn',
           logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikitlearn/scikitlearn-original.svg'
+        },
+        {
+          name: 'Matplotlib',
+          logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matplotlib/matplotlib-original.svg'
         }
       ]
     },
@@ -114,10 +140,6 @@ const Skills = () => {
         {
           name: 'ElevenLabs',
           logo: 'https://www.elevenlabs.io/favicon.ico'
-        },
-        {
-          name: 'Llama',
-          logo: 'https://llama.meta.com/favicon.ico'
         },
         {
           name: 'Hugging Face',

@@ -24,16 +24,6 @@ const Experience = () => {
 
   const experiences = [
     {
-      id: 'casino',
-      title: 'Employée Polyvalente',
-      company: 'Casino Rangueil',
-      period: 'Octobre 2021 - Juin 2022',
-      location: 'Toulouse, France',
-      description: 'Service client, gestion de la caisse, mise en rayon et approvisionnement. Développement de compétences en relation client et gestion d\'équipe dans un environnement commercial dynamique.',
-      technologies: ['Service Client', 'Gestion de Caisse', 'Travail d\'Équipe', 'Polyvalence'],
-      type: 'CDD'
-    },
-    {
       id: 'domaine',
       title: 'Serveuse Extra',
       company: 'Domaine de la Peyrolade',
@@ -41,6 +31,16 @@ const Experience = () => {
       location: 'Daux, France',
       description: 'Service en salle et organisation d\'événements dans un domaine viticole. Gestion des réservations, service des clients et participation à l\'organisation d\'événements privés.',
       technologies: ['Service en Salle', 'Organisation d\'Événements', 'Relation Client', 'Travail Saisonnier'],
+      type: 'CDD'
+    },
+    {
+      id: 'casino',
+      title: 'Employée Polyvalente',
+      company: 'Casino Rangueil',
+      period: 'Octobre 2021 - Juin 2022',
+      location: 'Toulouse, France',
+      description: 'Service client, gestion de la caisse, mise en rayon et approvisionnement. Développement de compétences en relation client et gestion d\'équipe dans un environnement commercial dynamique.',
+      technologies: ['Service Client', 'Gestion de Caisse', 'Travail d\'Équipe', 'Polyvalence'],
       type: 'CDD'
     }
   ];

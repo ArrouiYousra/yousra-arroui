@@ -7,8 +7,6 @@ const Certifications = () => {
       id: 'hacktogone',
       title: 'Certification - Hackathon IA 2025',
       type: 'Hackathon',
-      description: 'Certification obtenue lors de la participation au Hacktogone.',
-      date: '2024',
       image: '/assets/certifications/hacktogone.pdf'
     }
   ];
@@ -26,11 +24,10 @@ const Certifications = () => {
               {cert.image && (
                 <div className="certification-preview">
                   <iframe
-                    src={process.env.PUBLIC_URL + cert.image}
-                    width="100%"
-                    height="500px"
-                    title={`Certification ${cert.title}`}
-                    className="certification-iframe"
+                    src={process.env.PUBLIC_URL + cert.image + '#toolbar=0&navpanes=0'}
+                    className="certification-image"
+                    title={cert.title}
+                    frameBorder="0"
                   />
                 </div>
               )}
@@ -39,7 +36,6 @@ const Certifications = () => {
                 <span className="certification-type">{cert.type}</span>
               </div>
               <p className="certification-description">{cert.description}</p>
-              <div className="certification-date">{cert.date}</div>
             </div>
           ))}
         </div>

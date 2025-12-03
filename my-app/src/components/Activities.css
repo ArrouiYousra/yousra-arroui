@@ -22,8 +22,8 @@
 }
 
 .activities-title {
-  font-size: 2.5rem;
-  font-weight: 700;
+  font-size: 4rem;
+  font-weight: 600;
   color: #ffffff;
   margin: 0;
 }
@@ -77,9 +77,19 @@
   border-color: #30363d;
 }
 
-.activity-icon {
-  font-size: 3rem;
+.activity-image {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
   margin-bottom: 10px;
+  filter: brightness(0) invert(1);
+  opacity: 0.9;
+  transition: all 0.3s ease;
+}
+
+.activity-item:hover .activity-image {
+  opacity: 1;
+  transform: scale(1.1);
 }
 
 .activity-name {
@@ -94,7 +104,7 @@
   }
 
   .activities-title {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 
   .activities-content {
@@ -106,8 +116,9 @@
     padding: 25px 15px;
   }
 
-  .activity-icon {
-    font-size: 2.5rem;
+  .activity-image {
+    width: 60px;
+    height: 60px;
   }
 
   .activity-name {

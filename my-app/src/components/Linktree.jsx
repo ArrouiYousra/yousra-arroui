@@ -5,11 +5,13 @@ const Linktree = () => {
   return (
     <section id="linktree" className="linktree-section">
       <div className="linktree-container">
-        <div className="linktree-header">
-          <h2 className="linktree-title">Liens utiles</h2>
-        </div>
-        
         <div className="linktree-content">
+          <h2 className="linktree-title">
+            Cliquer ici
+            <svg className="linktree-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+              <path d="M12 5v14M19 12l-7 7-7-7"/>
+            </svg>
+          </h2>
           <a 
             href="https://lnk.bio/yousraarroui" 
             target="_blank" 

@@ -19,28 +19,44 @@ const Contact = () => {
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
+    setSubmitStatus('');
     
-    const subject = encodeURIComponent(`Message de ${formData.fullName}`);
-    const body = encodeURIComponent(
-      `Nom: ${formData.fullName}\n` +
-      `Email: ${formData.email}\n\n` +
-      `Message:\n${formData.message}`
-    );
-    
-    const mailtoLink = `mailto:arrouiyousra@proton.me?subject=${subject}&body=${body}`;
-    
-    window.open(mailtoLink, '_blank');
-    
-    setTimeout(() => {
+    try {
+      // Utilisation de Formspree - Service gratuit d'envoi d'emails
+      // Remplacez 'YOUR_FORM_ID' par votre ID Formspree
+      // Créez un compte gratuit sur https://formspree.io/ et créez un nouveau formulaire
+      const response = await fetch('https://formspree.io/f/YOUR_FORM_ID', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: formData.fullName,
+          email: formData.email,
+          message: formData.message,
+          _replyto: formData.email,
+          _subject: `Message de ${formData.fullName}`
+        })
+      });
+
+      if (response.ok) {
+        setSubmitStatus('success');
+        setFormData({ fullName: '', email: '', message: '' });
+        setTimeout(() => setSubmitStatus(''), 5000);
+      } else {
+        setSubmitStatus('error');
+        setTimeout(() => setSubmitStatus(''), 5000);
+      }
+    } catch (error) {
+      console.error('Erreur lors de l\'envoi:', error);
+      setSubmitStatus('error');
+      setTimeout(() => setSubmitStatus(''), 5000);
+    } finally {
       setIsSubmitting(false);
-      setSubmitStatus('success');
-      setFormData({ fullName: '', email: '', message: '' });
-      
-      setTimeout(() => setSubmitStatus(''), 3000);
-    }, 1000);
+    }
   };
 
   return (
@@ -100,7 +116,12 @@ const Contact = () => {
 
             {submitStatus === 'success' && (
               <div className="success-message">
-                Votre client email s'est ouvert avec le message pré-rempli !
+                Message envoyé avec succès ! Je vous répondrai dès que possible.
+              </div>
+            )}
+            {submitStatus === 'error' && (
+              <div className="error-message">
+                Une erreur est survenue. Veuillez réessayer ou me contacter directement à arrouiyousra@proton.me
               </div>
             )}
           </form>

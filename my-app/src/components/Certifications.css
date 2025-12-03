@@ -22,8 +22,8 @@
 }
 
 .certifications-title {
-  font-size: 2.5rem;
-  font-weight: 700;
+  font-size: 4rem;
+  font-weight: 600;
   color: #ffffff;
   margin: 0;
 }
@@ -101,11 +101,17 @@
   border-radius: 10px;
   overflow: hidden;
   border: 1px solid #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.certification-iframe {
+.certification-image {
   width: 100%;
-  height: 500px;
+  max-width: 100%;
+  min-height: 500px;
+  height: auto;
+  display: block;
   border: none;
   background: #ffffff;
 }
@@ -133,7 +139,7 @@
   }
 
   .certifications-title {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 
   .certifications-content {
@@ -145,8 +151,5 @@
     padding: 20px;
   }
 
-  .certification-iframe {
-    height: 400px;
-  }
 }
 
