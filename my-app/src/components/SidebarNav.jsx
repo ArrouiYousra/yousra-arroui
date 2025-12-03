@@ -5,11 +5,12 @@ const SidebarNav = ({ onClose }) => {
   const navItems = [
     { href: '#home', label: 'Accueil' },
     { href: '#about', label: 'À propos' },
+    { href: '#linktree', label: 'Linktree' },
     { href: '#education', label: 'Éducation' },
+    { href: '#experience', label: 'Expériences professionnelles' },
+    { href: '#projects', label: 'Projets' },
     { href: '#certifications', label: 'Certifications' },
     { href: '#skills', label: 'Compétences' },
-    { href: '#projects', label: 'Projets' },
-    { href: '#experience', label: 'Expérience' },
     { href: '#activities', label: 'Centres d\'intérêt' },
     { href: '#contact', label: 'Me contacter' }
   ];

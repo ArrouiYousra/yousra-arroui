@@ -17,7 +17,7 @@ const Education = () => {
                 <div className="timeline-dot"></div>
                 <div className="timeline-logo-right">
                   <a href="https://www.epitech.eu" target="_blank" rel="noopener noreferrer">
-                    <img src="/assets/logos/education/Epitech.gif" alt="Logo EPITECH" />
+                    <img src={process.env.PUBLIC_URL + '/assets/logos/education/Epitech.gif'} alt="Logo EPITECH" />
                   </a>
                 </div>
               </div>
@@ -42,7 +42,7 @@ const Education = () => {
                 <div className="timeline-dot"></div>
                 <div className="timeline-logo-left">
                   <a href="https://www.univ-tlse3.fr" target="_blank" rel="noopener noreferrer">
-                    <img src="/assets/logos/education/Logo_Université_Toulouse_3-2015.png" alt="Logo Université de Toulouse" />
+                    <img src={process.env.PUBLIC_URL + '/assets/logos/education/Logo_Université_Toulouse_3-2015.png'} alt="Logo Université de Toulouse" />
                   </a>
                 </div>
               </div>
@@ -67,7 +67,7 @@ const Education = () => {
                 <div className="timeline-dot"></div>
                 <div className="timeline-logo-right">
                   <a href="https://www.univ-tlse3.fr" target="_blank" rel="noopener noreferrer">
-                    <img src="/assets/logos/education/Logo_Université_Toulouse_3-2015.png" alt="Logo Université de Toulouse" />
+                    <img src={process.env.PUBLIC_URL + '/assets/logos/education/Logo_Université_Toulouse_3-2015.png'} alt="Logo Université de Toulouse" />
                   </a>
                 </div>
               </div>
@@ -92,7 +92,7 @@ const Education = () => {
                 <div className="timeline-dot"></div>
                 <div className="timeline-logo-left">
                   <a href="https://liad-alger.fr" target="_blank" rel="noopener noreferrer">
-                    <img src="/assets/logos/education/logo-liad-3-600x468.png" alt="Logo Lycée International Alexandre Dumas" />
+                    <img src={process.env.PUBLIC_URL + '/assets/logos/education/logo-liad-3-600x468.png'} alt="Logo Lycée International Alexandre Dumas" />
                   </a>
                 </div>
               </div>

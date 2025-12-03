@@ -3,11 +3,12 @@ import Header from './components/Header';
 import Navigation from './components/Navigation';
 import Hero from './components/Hero';
 import About from './components/About';
+import Linktree from './components/Linktree';
 import Education from './components/Education';
+import Experience from './components/Experience';
+import Projects from './components/Projects';
 import Certifications from './components/Certifications';
 import Skills from './components/Skills';
-import Projects from './components/Projects';
-import Experience from './components/Experience';
 import Activities from './components/Activities';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
@@ -27,11 +28,12 @@ function App() {
             <div className="main-content">
               <Hero />
               <About />
+              <Linktree />
               <Education />
+              <Experience />
+              <Projects />
               <Certifications />
               <Skills />
-              <Projects />
-              <Experience />
               <Activities />
               <Contact />
             </div>

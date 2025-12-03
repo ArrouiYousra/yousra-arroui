@@ -1,0 +1,88 @@
+.linktree-section {
+  padding: 80px 20px;
+  background: #000000;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.linktree-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+}
+
+.linktree-header {
+  margin-bottom: 40px;
+}
+
+.linktree-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0;
+}
+
+.linktree-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.linktree-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  text-decoration: none;
+  color: #ffffff;
+  transition: all 0.3s ease;
+  padding: 20px;
+  border-radius: 15px;
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  border: 1px solid #333;
+}
+
+.linktree-link:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(99, 102, 241, 0.3);
+  border-color: #6366f1;
+}
+
+.linktree-qr {
+  width: 200px;
+  height: 200px;
+  border-radius: 8px;
+  object-fit: contain;
+  background: #ffffff;
+  padding: 8px;
+}
+
+.linktree-text {
+  font-family: "OpenAI Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-feature-settings: "liga" on, "calt" on;
+  -webkit-font-smoothing: antialiased;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #ffffff;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .linktree-section {
+    padding: 60px 20px;
+  }
+
+  .linktree-title {
+    font-size: 2rem;
+  }
+
+  .linktree-qr {
+    width: 150px;
+    height: 150px;
+  }
+}
+
