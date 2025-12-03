@@ -49,7 +49,7 @@ const Projects = () => {
       id: 'portfolio',
       title: 'My Portfolio',
       description: 'Site web portfolio développé avec React, présentant mes compétences, projets et parcours académique. Design moderne avec animations et interface responsive.',
-      image: process.env.PUBLIC_URL + '/assets/projects/23d25f92483d3ece840f54c65a524b0b.gif',
+      image: process.env.PUBLIC_URL + '/assets/photos/accueil.jpeg',
       technologies: ['React', 'HTML5/CSS3', 'JavaScript', 'GitHub Actions'],
       status: 'Terminé',
       github: 'https://arrouiyousra.github.io/yousra-arroui',
@@ -117,11 +117,11 @@ const Projects = () => {
       featured: true
     },
     {
-      id: 'jenkins',
-      title: 'Projet Jenkins',
-      description: 'À compléter - Description du projet Jenkins.',
-      image: process.env.PUBLIC_URL + '/assets/projects/placeholder.png',
-      technologies: ['Jenkins', 'À compléter'],
+      id: 'marvin',
+      title: 'My Marvin',
+      description: 'Projet en cours de développement. Plus d\'informations à venir prochainement.',
+      image: process.env.PUBLIC_URL + '/assets/projects/work-in-progress.png',
+      technologies: ['Jenkins', 'CI/CD'],
       status: 'En cours',
       github: '',
       featured: true
@@ -179,11 +179,17 @@ const Projects = () => {
 
             <div className="project-card">
               <div className="project-image-container">
-                <img 
-                  src={currentProjectData.image} 
-                  alt={currentProjectData.title}
-                  className="project-image"
-                />
+                {currentProjectData.image && currentProjectData.image.includes('work-in-progress') ? (
+                  <div className="project-image-placeholder">
+                    <span>Work in Progress</span>
+                  </div>
+                ) : (
+                  <img 
+                    src={currentProjectData.image} 
+                    alt={currentProjectData.title}
+                    className="project-image"
+                  />
+                )}
                 <div className="project-overlay">
                   <div className="project-status">
                     <span className={`status-badge ${currentProjectData.status.toLowerCase().replace(' ', '-')}`}>
