@@ -12,7 +12,7 @@ const About = () => {
 
         <div className="about-photo">
           <img 
-            src={process.env.PUBLIC_URL + '/yousra-photo.jpg'} 
+            src={process.env.PUBLIC_URL + '/assets/photos/yousra-photo.jpg'} 
             alt="Yousra Arroui" 
             className="about-image"
           />

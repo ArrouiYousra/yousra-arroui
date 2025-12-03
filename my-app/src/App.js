@@ -4,10 +4,11 @@ import Navigation from './components/Navigation';
 import Hero from './components/Hero';
 import About from './components/About';
 import Education from './components/Education';
+import Certifications from './components/Certifications';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Experience from './components/Experience';
-import CV from './components/CV';
+import Activities from './components/Activities';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import './App.css';
@@ -27,10 +28,11 @@ function App() {
               <Hero />
               <About />
               <Education />
+              <Certifications />
               <Skills />
               <Projects />
               <Experience />
-              <CV />
+              <Activities />
               <Contact />
             </div>
             <Footer />

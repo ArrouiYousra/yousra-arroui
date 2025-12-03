@@ -6,10 +6,11 @@ const SidebarNav = ({ onClose }) => {
     { href: '#home', label: 'Accueil' },
     { href: '#about', label: 'À propos' },
     { href: '#education', label: 'Éducation' },
+    { href: '#certifications', label: 'Certifications' },
     { href: '#skills', label: 'Compétences' },
     { href: '#projects', label: 'Projets' },
     { href: '#experience', label: 'Expérience' },
-    { href: '#cv', label: 'Mon CV' },
+    { href: '#activities', label: 'Centres d\'intérêt' },
     { href: '#contact', label: 'Me contacter' }
   ];
 

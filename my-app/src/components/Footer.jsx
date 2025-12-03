@@ -7,9 +7,10 @@ const Footer = () => {
       <div className="footer-container">
         <div className="footer-content">
           <div className="footer-linktree">
+            <h3 className="linktree-title">Retrouvez-moi sur tous mes réseaux</h3>
             <a href="https://lnk.bio/yousraarroui" target="_blank" rel="noopener noreferrer" className="linktree-link">
               <img 
-                src={process.env.PUBLIC_URL + '/frame.png'} 
+                src={process.env.PUBLIC_URL + '/assets/icons/frame.png'} 
                 alt="QR Code Linktree" 
                 className="linktree-qr"
               />
@@ -62,7 +63,7 @@ const Footer = () => {
 
             <a href="https://www.riotgames.com" target="_blank" rel="noopener noreferrer" className="social-link" title="League of Legends - Seichi#zebii">
               <img 
-                src="/yousra-arroui/riotgames-svgrepo-com.svg" 
+                src="/assets/logos/skills/riotgames-svgrepo-com.svg" 
                 alt="League of Legends" 
                 width="20" 
                 height="20"
@@ -72,7 +73,7 @@ const Footer = () => {
 
             <a href="https://apexlegends.com" target="_blank" rel="noopener noreferrer" className="social-link" title="Apex Legends">
               <img 
-                src="/yousra-arroui/APEX_legends_logo_mini.png" 
+                src="/assets/logos/skills/APEX_legends_logo_mini.png" 
                 alt="Apex Legends" 
                 width="20" 
                 height="20"

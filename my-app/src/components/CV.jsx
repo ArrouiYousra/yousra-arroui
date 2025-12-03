@@ -14,7 +14,7 @@ const CV = () => {
           <div className="cv-preview">
             <div className="cv-preview-container">
               <iframe
-                src="/yousra-arroui/ARROUI Yousra.pdf.pdf"
+                src="/assets/documents/ARROUI Yousra.pdf.pdf"
                 width="100%"
                 height="600px"
                 title="CV Yousra Arroui"

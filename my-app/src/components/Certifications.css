@@ -1,0 +1,131 @@
+.certifications {
+  padding: 80px 20px;
+  background: #000000;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.certifications-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.certifications-header {
+  text-align: center;
+  margin-bottom: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.certifications-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0;
+}
+
+.certifications-icon {
+  font-size: 2.5rem;
+}
+
+.certifications-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.certification-card {
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  border-radius: 15px;
+  padding: 30px;
+  border: 1px solid #333;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.certification-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, #6366f1, #8b5cf6, #ec4899);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.certification-card:hover::before {
+  transform: scaleX(1);
+}
+
+.certification-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(99, 102, 241, 0.3);
+  border-color: #6366f1;
+}
+
+.certification-header-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.certification-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0;
+}
+
+.certification-type {
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  color: #ffffff;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.certification-description {
+  color: #b0b0b0;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+.certification-date {
+  color: #6366f1;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .certifications {
+    padding: 60px 20px;
+  }
+
+  .certifications-title {
+    font-size: 2rem;
+  }
+
+  .certifications-content {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .certification-card {
+    padding: 20px;
+  }
+}
+

@@ -26,6 +26,17 @@
   margin-bottom: 1rem;
 }
 
+.linktree-title {
+  font-family: "OpenAI Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-feature-settings: "liga" on, "calt" on;
+  -webkit-font-smoothing: antialiased;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #ffffff;
+  text-align: center;
+  margin: 0 0 1rem 0;
+}
+
 .linktree-link {
   display: flex;
   flex-direction: column;

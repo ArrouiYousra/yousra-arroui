@@ -21,3 +21,24 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Windows Zone.Identifier files (metadata from downloaded files)
+*Zone.Identifier
+*.Zone.Identifier
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# Editor directories and files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS files
+Thumbs.db
+.DS_Store
