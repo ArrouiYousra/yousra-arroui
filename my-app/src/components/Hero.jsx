@@ -8,7 +8,7 @@ const Hero = () => {
         <div className="hero-content">
           <div className="hero-image-wrapper">
             <img 
-              src={process.env.PUBLIC_URL + '/assets/photos/accueil.jpeg'} 
+              src={process.env.PUBLIC_URL + '/assets/projects/Digital.jpeg'} 
               alt="Accueil" 
               className="hero-image"
             />
